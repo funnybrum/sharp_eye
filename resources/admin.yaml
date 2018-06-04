@@ -1,0 +1,21 @@
+extend: base.yaml
+
+identifier: admin
+host: 0.0.0.0
+port: 443
+ssl_key: ./resources/key.pem
+ssl_cert: ./resources/cert.pem
+ssl_pass: SSL_KEY_PASSWORD
+password: SET_ADMIN_PASSWORD_HERE
+cameras: ['camera1', 'camera2']
+#cameras: []
+camera1:
+    name: Camera 1
+    active: True
+    snapshot: /tmp/cam1.jpg
+    command: "APP_CONFIG=./resources/cam1.yaml python md.py"
+camera2:
+    name: Camera 2
+    active: True
+    snapshot: /tmp/cam2.jpg
+    command: "APP_CONFIG=./resources/cam2.yaml python md.py"

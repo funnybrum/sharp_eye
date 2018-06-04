@@ -1,0 +1,10 @@
+extend: base.yaml
+
+identifier: camera2
+snapshot_history: /home/pi/camera2
+snapshot: /tmp/cam2.jpg
+motion:
+    camera_address: 192.168.0.11
+    mask: resources/cam2_mask.png
+    threshold: 64
+    history: 16

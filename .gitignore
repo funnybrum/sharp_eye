@@ -1,0 +1,9 @@
+*.pyc
+.idea/
+tests/*.txt
+venv
+env
+resources/cert.pem
+resources/key.pem
+pull.sh
+push.sh

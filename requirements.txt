@@ -1,0 +1,4 @@
+flask
+cv2==3.4.1
+numpy
+pyyaml

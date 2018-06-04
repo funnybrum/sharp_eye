@@ -1,0 +1,22 @@
+motion:
+    # time between frame retrieval
+    interval: 8
+    # retry count to get a frame
+    camera_retry_count: 2
+    # two conditions, if both are true - alarm
+    dc_pixels: 300
+    dc_percent: 10
+    # single condition - alarm on true
+    sc_pixels: 2000
+email:
+    to: SET_TO_EMAIL_HERE
+    from: SET_FROM_EMAIL_HERE
+smtp:
+    server: smtp.gmail.com
+    port: 587
+    user: GMAIL_ACCOUNT_USERNAME
+    password: GMAIL_ACCOUNT_PASSWORD
+    sender: Sharp Eye
+    recipient: SET_TO_EMAIL_HERE
+tmp_folder: /tmp
+full_snapshot_history: false
